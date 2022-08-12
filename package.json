@@ -2,9 +2,8 @@
   "name": "nice-ui",
   "private": true,
   "version": "1.0.0",
-  "packageManager": "pnpm@7.5.2",
   "scripts": {
-    "dev": "pnpm -C paly dev"
+    "dev": "pnpm -C play dev"
   },
 
   "license": "ISC",
@@ -20,9 +19,6 @@
     "eslint": "^8.20.0",
     "eslint-plugin-vue": "^9.3.0",
     "typescript": "^4.7.4"
-  },
-  "engines": {
-    "node": ">= 16.0.0"
   }
 
 }
