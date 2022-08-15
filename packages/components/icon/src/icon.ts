@@ -8,24 +8,15 @@ export const iconTheme = [
     'multi-color',
 ] as const
 export const iconStrokeLinecap = [
-    'outline',
-    'filled',
-    'two-tone',
-    'multi-color',
+    'butt',
+    'round',
+    'square'
 ] as const
 export const iconStrokeLinejoin = [
-    'outline',
-    'filled',
-    'two-tone',
-    'multi-color',
+    'miter',
+    'round',
+    'bevel'
 ] as const
-export const iconStrokeWidth = [
-    'outline',
-    'filled',
-    'two-tone',
-    'multi-color',
-] as const
-
 
 export const iconProps = {
     type: String,
@@ -34,9 +25,14 @@ export const iconProps = {
         values: iconTheme,
         default: 'outline'
     },
-    size: [Number, String] as PropType<number | string>,
+    size: {
+        type: [Number, String] as PropType<number | string>,
+        default: 22
+    },
     spin: Boolean,
-    fill: String,
+    fill:{
+        type:  [String, Array<String>] as PropType<string | Array<string>>,
+    },
     strokeLinecap: {
         type: String,
         values: iconStrokeLinecap,
@@ -50,9 +46,7 @@ export const iconProps = {
     strokeWidth: {
         type: Number,
         default: 4
-    },
-
-    color: String,
+    }
 
 } as const;
 

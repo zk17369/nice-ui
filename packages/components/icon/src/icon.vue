@@ -1,5 +1,5 @@
 <template>
-    <!-- <i :style="style">
+    <i :style="style">
         <icon-park 
           type="Home" 
           :theme="theme" 
@@ -10,10 +10,7 @@
           :strokeLinejoin="strokeLinejoin"
           :strokeWidth="strokeWidth"
         ></icon-park>
-    </i> -->
-    <div>
-      范德萨看了范德萨
-    </div>
+    </i>
 </template>
 <script setup lang="ts">
 import { iconProps } from "./icon";

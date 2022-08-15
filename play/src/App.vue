@@ -1,14 +1,21 @@
 <script setup lang="ts">
 import NiHeader from './components/Header.vue'
-// import { Home } from "@icon-park/vue-next";
+
 </script>
 
 <template>
     <ni-header></ni-header>
-    <ni-icon type="Home"></ni-icon>
-    <!-- <Home theme="filled" :size="16"/> -->
+
+    <div class="play">
+
+        <ni-icon type="Home" theme="outline" strokeLinecap="butt"></ni-icon>
+
+    </div>
 </template>
 
 <style lang="scss" scoped>
+.play{
+    text-align: center;
+}
 
 </style>
